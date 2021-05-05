@@ -9,6 +9,11 @@
             "id": 2,
             "content": "Other content here",
             "author": "Ivan"
+        },
+        {
+            "id": 3,
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium repellendus at dolores id dolorum consectetur dicta quam labore iure inventore exercitationem, corporis animi architecto placeat, officiis enim? Ipsa, rerum iure.",
+            "author": "Joro"
         }
     ]
 }

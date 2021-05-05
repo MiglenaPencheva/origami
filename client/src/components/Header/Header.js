@@ -1,11 +1,11 @@
-import style from './Header.module.css';
+import style from './Header.css';
 import NavigationItem from './NavigationItem';
 
 const Header = () => {
     return (
         <nav className={style.navigation}>
             <ul>
-                <li className="listItem"><img src="/white-origami-bird.png" alt="white origami" /></li>
+                <li className="lstItem"><img src="/white-origami-bird.png" alt="white origami" /></li>
                 <NavigationItem>Going to 1</NavigationItem>
                 <NavigationItem>Going to 2</NavigationItem>
                 <NavigationItem>Going to 3</NavigationItem>
@@ -17,7 +17,6 @@ const Header = () => {
                 <NavigationItem>Going to 9</NavigationItem>
                 <NavigationItem>Going to 10</NavigationItem>
                 <NavigationItem>Going to 11</NavigationItem>
-
             </ul>
         </nav>
     );
