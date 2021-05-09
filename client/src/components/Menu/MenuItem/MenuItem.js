@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import './MenuItem.css';
+import './MenuItem.module.css';
 
 const MenuItem = ({
     id,

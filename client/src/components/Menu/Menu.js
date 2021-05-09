@@ -3,7 +3,7 @@ import { useState } from 'react';
 import MenuItem from './MenuItem';
 import { MENU_ITEMS } from './MenuConstants';
 
-import './Menu.css';
+import style from './Menu.module.css';
 
 
 const Menu = ({ onMenuItemClick }) => {
@@ -15,7 +15,7 @@ const Menu = ({ onMenuItemClick }) => {
     };
 
     return (
-        <aside className="menu">
+        <aside className={style.menu}>
             {MENU_ITEMS.map(x =>
                 <MenuItem
                     key={x.id}

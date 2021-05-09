@@ -3,7 +3,7 @@ import './Post.css';
 const Post = ({ content, author }) => {
     return (
         <div className="post-container">
-            <img src="/blue-origami-bird.png" alt="blue bird"></img>
+            <img src="/blue-origami-bird.png" alt="blue bird"/>
             <p className="post-description">
                 {content}
             </p>

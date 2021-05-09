@@ -1,11 +1,12 @@
 /* eslint-disable eqeqeq */
 import { Component } from 'react';
-
+import { Route, Link, NavLink, Redirect, Switch } from 'react-router-dom';
 import { getAll } from './services/postService';
 
 import Header from './components/Header';
 import Menu from './components/Menu';
 import Main from './components/Main';
+import About from './components/About';
 import style from './App.module.css';
 
 
@@ -49,9 +50,14 @@ class App extends Component {
                 <Header />
 
                 <div className={style.container}>
-                    <Menu onMenuItemClick={this.onMenuItemClick}/>
-
-                    <Main posts={this.getPosts()} />
+                    <Menu onMenuItemClick={this.onMenuItemClick} />
+                    <Switch>
+                        <Route path="/" exact>
+                            <Main posts={this.getPosts()} />
+                        </Route>
+                        <Route path="/about" component={About} />
+                        <Route render={() => <h1>Error Page</h1>} />
+                    </Switch>
                 </div>
             </div>
         );

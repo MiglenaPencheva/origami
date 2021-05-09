@@ -1,4 +1,4 @@
-import style from './NavigationItem.css';
+import style from './NavigationItem.module.css';
 
 const NavigationItem = (props) => {
     return (

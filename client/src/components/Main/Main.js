@@ -1,10 +1,10 @@
 import Post from '../Post';
-import './Main.css';
+import style from'./Main.module.css';
 
 const Main = ({ posts }) => {
     return (
-        <main className="main-container">
-            <div className="posts">
+        <main className={style['main-container']}>
+            <div className={style.posts}>
                 {posts.map(x =>
                     <Post
                         key={x.id}
